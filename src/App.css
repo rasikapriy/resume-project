@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f2f5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Layout */
+.layout {
   min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 10vh;
+}
+
+/* Navigation Menu */
+.menu {
+  width: 50%;
+  min-width: 300px;
+}
+
+/* Content Area */
+.content {
+  padding: 50px;
+  text-align: center;
+  background-color: #f0f2f5;
+  min-height: 70vh;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  text-align: center;
+  background-color: #001529;
   color: white;
+  padding: 10px 0;
+  min-height: 20vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* Card Styles */
+.content-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hover Effect for Cards */
+.content-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styles */
+.primary-button {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+  background-color: #096dd9;
+}
+
+/* Spinner */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

@@ -1,0 +1,128 @@
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  
+  .layout {
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .menu {
+    width: 50%;
+    min-width: 300px;
+  }
+  
+  
+  .content {
+    padding: 50px;
+    text-align: center;
+    background-color: #f0f2f5;
+    min-height: 80vh;
+  }
+  
+  
+  .footer {
+    text-align: center;
+    background-color: #001529;
+    color: white;
+    padding: 10px 0;
+  }
+
+  .content-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  .content-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .primary-button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .primary-button:hover {
+    background-color: #096dd9;
+  }
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .dark-mode {
+    background-color: #1c1c1c;
+  }
+  
+  .dark-mode .header {
+    background-color: #0d0d0d !important;
+  }
+  
+  .dark-mode .content {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .dark-mode .footer {
+    background-color: #0d0d0d;
+    color: white;
+  }
+  .dark-mode .ant-btn-primary {
+    background-color: #fadb14;
+    color: black;
+  }
+  
+  .dark-mode .ant-btn-primary:hover {
+    background-color: #ffe580;
+  }  
+  
+.hover-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hover-card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.skills-list {
+  margin-top: 10px;
+  
+  
+}
+
+.skill-tag {
+
+  font-size: 14px;
+  
+  
+}
