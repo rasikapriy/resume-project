@@ -52,7 +52,7 @@ const Contents = ({ selectedPage, setSelectedPage }) => {
             title="Contact Me"
             content="Feel free to reach out for collaboration or job opportunities."
             buttonText="Email Me"
-            onClick={() => (window.location.href = "mailto:your-email@example.com")}
+            onClick={() => (window.location.href = "mailto:rasikapriyabsc@gmail.com")}
           />
         </Col>
       </Row>
