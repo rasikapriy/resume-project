@@ -50,9 +50,9 @@ const Contents = ({ selectedPage, setSelectedPage }) => {
         <Col xs={24} md={8}>
           <HoverCard
             title="Contact Me"
-            content="Feel free to reach out for collaboration or job opportunities."
+            content="I'd love to hear from you! Whether you have a project in mind, need a front-end developer, or just want to say hi, feel free to reach out."
             buttonText="Email Me"
-            onClick={() => (window.location.href = "mailto:your-email@example.com")}
+            onClick={() => (window.location.href = "mailto:rasikapriyabsc@gmail.com")}
           />
         </Col>
       </Row>

@@ -10,17 +10,16 @@ const App = () => {
   const [loading, setLoading] = useState(false);
 
   const handleHover = (key) => {
-    if (key !== selectedPage) {
+    
       setLoading(true);
       setTimeout(() => {
-        setSelectedPage(key);
         setLoading(false);
       }, 2000);
-    }
+    
   };
 
   return (
-    <ConfigProvider theme={{ token: { colorPrimary: "#1890ff" } }}>
+    
       <Layout className="layout">
         <Header className="header">
           <Menu theme="dark" mode="horizontal" selectedKeys={[selectedPage]} className="menu" onClick={(e)=> setSelectedPage(e.key)}>
@@ -30,18 +29,18 @@ const App = () => {
               { key: "projects", label: "Projects", icon: <FundProjectionScreenOutlined /> },
               { key: "contact", label: "Contact", icon: <MailOutlined /> },
             ].map((item) => (
-              <Menu.Item key={item.key} icon={item.icon} >
+              <Menu.Item key={item.key} icon={item.icon} onClick={handleHover}>
                 {item.label}
               </Menu.Item>
             ))}
           </Menu>
         </Header>
         <Content className="content">
-          {loading ? <Spin size="large" className="spinner" /> : <Contents selectedPage={selectedPage} setSelectedPage={setSelectedPage} />}
+          {loading ? <Spin size="large" className="spinner" /> : <Contents selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>}
         </Content>
         <Footer className="footer">© 2025 My Portfolio</Footer>
       </Layout>
-    </ConfigProvider>
+    
   );
 };
 export default App;

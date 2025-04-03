@@ -19,6 +19,7 @@ body {
   .menu {
     width: 50%;
     min-width: 300px;
+    font-size: larger;
   }
   
   
@@ -35,6 +36,7 @@ body {
     background-color: #001529;
     color: white;
     padding: 10px 0;
+    font-size: large;
   }
 
   .content-card {
@@ -43,6 +45,7 @@ body {
     border-radius: 10px;
     text-align: center;
     padding: 20px;
+    font-size: larger;
   }
   
   
