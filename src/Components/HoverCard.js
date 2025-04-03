@@ -1,8 +1,9 @@
 import React from "react";
-import { Card, Space, Tag, Typography, Button } from "antd";
+import { Card, Space, Tag, Typography } from "antd";
 import "./Style.css";
 
-const { Title, Paragraph } = Typography;
+const {Title,Paragraph }=Typography;
+const HoverCard = ({ title, content, skills}) => {
 
 const HoverCard = ({ title, content, skills, buttonText, onClick }) => {
   const safeSkills = Array.isArray(skills) ? skills : [];
@@ -21,14 +22,10 @@ const HoverCard = ({ title, content, skills, buttonText, onClick }) => {
           ))}
         </Space>
       )}
-
-      {buttonText && onClick && (  
-        <Button type="primary" className="hover-card-button" onClick={onClick}>
-          {buttonText}
-        </Button>
-      )}
     </Card>
   );
 };
 
-export default HoverCard;
+  
+  
+  export default HoverCard;
