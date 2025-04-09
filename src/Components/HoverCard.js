@@ -1,15 +1,17 @@
 import React from "react";
-import { Card, Space, Tag, Typography } from "antd";
+import { Card, Space, Tag, Typography, Button } from "antd";
 import "./Style.css";
 
-const {Title,Paragraph }=Typography;
+const { Title, Paragraph } = Typography;
 
 const HoverCard = ({ title, content, skills, buttonText, onClick }) => {
   const safeSkills = Array.isArray(skills) ? skills : [];
 
   return (
     <Card className="hover-card" hoverable>
-      <Title level={4} className="hover-card-title">{title}</Title>
+      <Title level={4} className="hover-card-title">
+        {title}
+      </Title>
       <Paragraph className="hover-card-content">{content}</Paragraph>
 
       {safeSkills.length > 0 && (
@@ -21,10 +23,15 @@ const HoverCard = ({ title, content, skills, buttonText, onClick }) => {
           ))}
         </Space>
       )}
+      {buttonText && onClick && (
+        <div className="hover-card-button">
+          <Button type="primary" onClick={onClick}>
+            {buttonText}
+          </Button>
+        </div>
+      )}
     </Card>
   );
 };
 
-  
-  
-  export default HoverCard;
+export default HoverCard;
