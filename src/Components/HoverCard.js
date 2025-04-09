@@ -3,7 +3,6 @@ import { Card, Space, Tag, Typography } from "antd";
 import "./Style.css";
 
 const {Title,Paragraph }=Typography;
-const HoverCard = ({ title, content, skills}) => {
 
 const HoverCard = ({ title, content, skills, buttonText, onClick }) => {
   const safeSkills = Array.isArray(skills) ? skills : [];
